@@ -15,19 +15,19 @@ console.log("Hello world")
     const rating = selection.rating;
 
 
-    // @TODO: Build a Bubble Chart using the sample data
-    var bubbleData = [{
-      x: year_release,
+    // Build a Bar Chart for genre
+    var barData = [{
+      x: genre,
       y: region,
-      mode: 'markers',
+      type: "bar"
     }];
     
-    var bubbleLayout = {
-      title: 'Bacteria',
+    var barLayout = {
+      title: 'Sales by Genre',
       margin: {t: 0}
     };
     
-    Plotly.newPlot("bubble", bubbleData, bubbleLayout);
+    Plotly.newPlot("bar", barData, barLayout);
   });
 }
 
