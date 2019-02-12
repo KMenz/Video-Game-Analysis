@@ -5,11 +5,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Flask Plotlyjs Example</title>
+  <title>Project 2</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
 <body>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <strong><a class="navbar-brand" href="">Video Game Sales</a></strong>
+                <a class="navbar-brand data" href="sales/NA_Sales" target="_blank">NA Json Data</a>
+                <a class="navbar-brand data" href="sales/EU_Sales"target="_blank">EU Json Data</a>
+                <a class="navbar-brand data" href="sales/JP_Sales"target="_blank">JP Json Data</a>
+                <a class="navbar-brand data" href="sales/Other_Sales"target="_blank">Other Json Data</a>
+                <a class="navbar-brand data" href="sales/Other_Sales"target="_blank">Global Json Data</a>
+            </div>
+        </div>
+    </nav>
 
   <div class="container">
     <div class="row">
@@ -18,36 +31,75 @@
         <p>Use the interactive charts below to explore the dataset</p>
       </div>
     </div>
+
     <div class="row">
       <div class="col-md-2">
         <div class="well">
-          <h5>SELECT Region:</h5>
+          <h5>Select Region:</h5>
           <select id="selDataset" onchange="optionChanged(this.value)"></select>
         </div>
-        <!-- <div class="panel panel-primary">
-          <div class="panel-heading">
-            <h3 class="panel-title">Sample MetaData</h3>
-          </div>
-          <div id="sample-metadata" class="panel-body"></div> -->
-        <!-- </div> -->
       </div>
-      <div class="col-md-5">
-        <div id="pie"></div>
+      <div class="col-md-8">
+        <h1>Total Sales By Genre</h1>
+        <div id="pie1"></div>
       </div>
-      <div class="col-md-5">
-        <div id="gauge"></div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Total Sales By Genre</h1>
+        <div id="bar1"></div>
       </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-md-12">
-      <div id="bar"></div>
+
+    <div class="row">
+        <div class="col-md-12">
+          <h1>Total Sales By Publisher</h1>
+          <div id="bar2"></div>
+        </div>
+      </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Total Sales By Platform</h1>
+        <div id="bar3"></div>
+      </div>
     </div>
+  
+    <div class="row">
+      <div class="col-md-8">
+        <h1>Total Sales By ESRB Rating</h1>
+        <div id="pie2"></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Total Sales By Critic Scores</h1>
+        <div id="plot1"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Total Sales By User Scores</h1>
+        <div id="plot2"></div>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Total Sales By Year</h1>
+            </canvas><canvas id="line"></canvas>
+        </div>
+    </div>
+
+
   </div>
 
-  <!-- <script src="https://cdn.plot.ly/plotly-1.31.2.min.js"></script> -->
+
+
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
   <script src="static/js/app.js"></script>
 
 </body>
