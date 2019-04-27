@@ -20,7 +20,7 @@ The project was to create an interactive dashboard in order to answer our questi
 We decided the best way to approach this project would be to create an interactive dashboard that would load our visualizations. We had to first load the downloaded CSV into a SQLite file, then extract the data into a flask API for manipulation using SQLAlchemy. We then worked together to build the charts that answered various questions such as what genre of video game sold the most, what publisher sold the most, how did each platform perform, what ratings are popular, and how did sales related to critic and user scores. We also wanted to see how these change depending on the location (US, EU, Japan, Other)
 
 
-# Analysis and Answers
+# Analysis Process
 ## Part 1 - Data Prep and Flask App Creation
 We loaded the data into a SQLite database and then extracted the data into a Flask API for manipulation using SQL Alchemy. We separated out the column headers for the sales of each location in order to access these later for our drop down menu that would be interactive with our dashboard. We then created multiple routes and loaded an HTML Template into the app to structure our dashboard.
 
