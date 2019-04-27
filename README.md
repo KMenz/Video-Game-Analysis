@@ -31,6 +31,8 @@ Now that the data was clean and accessible we moved to analyzing it. We created 
 
 We used Plotly, D3, ChartJS to build interactive plots that would be displayed on our dashboard. Then use bootstrap for our HTML framework and added a little CSS to make the dashboard look more appealing. 
 
-We then deployed the dashboard to the link you see here - 
+As of right now the dashboard has not been deployed. However all the files neccessary are in the github repo, you can download and see our charts for yourself!
+
+
 
 
